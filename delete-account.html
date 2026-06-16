@@ -150,6 +150,16 @@
             color: #1a1a2e;
             margin-bottom: 8px;
         }
+        .email-list {
+            list-style: none;
+            padding: 0;
+        }
+        .email-list li {
+            padding: 4px 0;
+        }
+        .email-list li::before {
+            content: "📧 ";
+        }
         @media (max-width: 600px) {
             body { margin: 10px; padding: 10px; }
             .container { padding: 20px; }
@@ -243,7 +253,10 @@
         <div class="contact-box">
             <strong>📧 Связь с поддержкой:</strong><br>
             Если у вас возникли проблемы с удалением аккаунта, напишите нам:<br>
-            <strong>Email:</strong> <a href="mailto:z3r0bugx@gmail.com">z3r0bugx@gmail.com</a><br>
+            <ul class="email-list">
+                <li><strong>Email:</strong> <a href="mailto:support@globus-market.uz">support@globus-market.uz</a></li>
+                <li style="margin-top: 4px; color: #666; font-size: 14px;">✉️ Альтернативный: <a href="mailto:z3r0bugx@gmail.com">z3r0bugx@gmail.com</a></li>
+            </ul>
             <strong>Время ответа:</strong> до 24 часов в рабочие дни
         </div>
 
